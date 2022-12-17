@@ -7,6 +7,7 @@ import { CartService } from '../cart.service';
   selector: 'app-shipping',
   templateUrl: './shipping.component.html',
   styleUrls: ['./shipping.component.css']
+  providers: [CartService]
 })
 
 export class ShippingComponent implements OnInit {
@@ -15,6 +16,8 @@ export class ShippingComponent implements OnInit {
 
   ngOnInit(): void {
     this.shippingCosts =  this.cartService.getShippingPrices();
+
+
   }
 
 }

@@ -27,6 +27,6 @@ export class CartService {
   }
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
   ) {}
 }
